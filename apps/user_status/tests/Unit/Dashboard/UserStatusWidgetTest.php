@@ -194,7 +194,7 @@ class UserStatusWidgetTest extends TestCase {
 
 		$this->initialState->expects($this->once())
 			->method('provideInitialState')
-			->with('user_status', 'dashboard_data', $this->callback(function($data): bool {
+			->with('user_status', 'dashboard_data', $this->callback(function ($data): bool {
 				$this->assertEquals([
 					[
 						'userId' => 'user_1',
